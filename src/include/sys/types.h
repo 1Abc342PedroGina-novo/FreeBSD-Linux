@@ -388,4 +388,9 @@ __END_DECLS
 
 #endif /* __BSD_VISIBLE */
 
+struct mtx {
+	int	owned;
+	struct mtx *parent;
+};
+
 #endif /* !_SYS_TYPES_H_ */
